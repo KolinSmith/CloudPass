@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/first_lin_lay"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Site Name: "
+            android:id="@+id/site_input_text"/>
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/site_input" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/first_lin_lay"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: "
+            android:id="@+id/username_input_text"/>
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_input" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:id="@+id/password_input_text" />
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_input" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center|right"
+        >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/add_acc_done_btn"
+        android:layout_gravity="right"
+        android:onClick="addNewAccount"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BACK"
+        android:id="@+id/add_acc_cancel_btn"
+        android:layout_gravity="right"
+        android:onClick="goBacktoParent"/>
+    </LinearLayout>
+</LinearLayout>

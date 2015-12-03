@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Site Name: " />
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/expanded_site_input" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username: " />
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/expanded_username_input" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: " />
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/expanded_password_input" />
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="Show Password"
+            android:textOn="Hide Password"
+            android:id="@+id/toggleButton"
+            android:layout_gravity="right"
+            android:checked="false" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom|right"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EDIT"
+            android:id="@+id/expanded_edit_btn"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:onClick="editAccount"
+            android:layout_alignTop="@+id/expanded_delete_btn"
+            android:layout_toLeftOf="@+id/expanded_delete_btn"
+            android:layout_toStartOf="@+id/expanded_delete_btn" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DELETE"
+            android:id="@+id/expanded_delete_btn"
+            android:layout_gravity="center_vertical|right"
+            android:onClick="deleteAccount"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="COPY PASSWORD"
+            android:id="@+id/copybutton"
+            android:layout_alignTop="@+id/expanded_edit_btn"
+            android:layout_toLeftOf="@+id/expanded_edit_btn"
+            android:layout_toStartOf="@+id/expanded_edit_btn"
+            android:onClick="copyToClipboard"/>
+    </RelativeLayout>
+
+</LinearLayout>

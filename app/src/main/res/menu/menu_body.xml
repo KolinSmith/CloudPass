@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".BodyActivity">
+    <item
+        android:id="@+id/change_pswd"
+        android:title="Change Password"
+        app:showAsAction="never"
+        android:orderInCategory="100"
+        android:onClick="changePassword"/>
+
+    <item
+        android:id="@+id/go_home"
+        android:title="Home"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        android:onClick="goHome"/>
+
+    <item
+        android:id="@+id/add_acc_btn"
+        android:title="Add Account"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/addnew"
+        android:onClick="addAccount"/>
+</menu>
